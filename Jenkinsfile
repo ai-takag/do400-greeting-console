@@ -24,7 +24,7 @@ pipeline{
         stage('Release') {
             steps {
                 sh '''
-                    oc project tliesj-greetings
+                    oc project tliesj-greeting
                     oc start-build greeting-console --follow --wait
                 '''
             }
